@@ -30,7 +30,7 @@
      inet_pton(AF_INET, argv[1], &srv.sin_addr);
  
      // Connect to the server
-     connect(sock, (struct sockaddr *)&srv, sizeof(srv))
+     connect(sock, (struct sockaddr *)&srv, sizeof(srv));
  
      // Check if the connection was successful
      ssize_t n = send(sock, MSG, sizeof(MSG), 0);
